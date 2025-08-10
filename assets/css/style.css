@@ -1,0 +1,101 @@
+.header {
+  position: sticky;
+  top: 0;
+}
+
+body { 
+  font-family: Arial; 
+  background: #f0fff0; 
+  color: green; 
+  margin: 0; 
+  padding: 0; 
+}
+
+p {
+  margin: 2em;
+}
+
+li {
+  display: flex;
+}
+
+.dest {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+    align-self: center;
+}
+
+.resnav {
+  overflow: hidden;
+  background-color: olivedrab;
+}
+
+.resnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 8px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.resnav a:hover {
+  background-color: #f0fff0;
+  color: black;
+}
+
+.resnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.resnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .resnav a:not(:first-child) {display: none;}
+  .resnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .resnav.responsive {position: relative;}
+  .resnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .resnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+h1, h2 { 
+  color: green; 
+  padding-left: 1em; 
+}
+
+ul { 
+  padding: 1em; 
+}
+
+nav a {
+  margin-right: 1em;
+}
+
+a {
+  color: #012401;
+}
+
+footer {
+  bottom: 0px;
+  padding: 1em;
+}
